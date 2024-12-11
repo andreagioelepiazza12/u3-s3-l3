@@ -1,0 +1,59 @@
+1-Spiegazione generica 
+(Cos'è, a cosa serve, che problema risolve, differenze con JS)
+
+1-TypeScript è un linguaggio di programmazione Open Source sviluppato da Microsoft. E' un super-set di javascript (cioè include
+tutto ciò che è presente in javascript e aggiunge funzionalità extra).
+
+Typescript serve a ridurre gli errori di runtime grazie alla tipizzazione statica. Grazie a questo gli molti errori possono 
+essere rilevati in fase di sviluppo anzichè durante l'esecuzione del codice.
+Migliora la leggibilità del codice, specialmente in progetti di grandi dimensioni.
+Supporta la scalabilità dei progetti grazie alla semplicità con cui si possono gestire interfacce, moduli o dipendenze.
+Offre funzionalità moderne in ambienti meno aggiornati.
+
+Typescript risolve i problemi legati alla non tipizzazione di javascript, alla mancanza di strumenti per grandi progetti, al
+debug.
+
+Differenze principali:
+
+Tipizzazione: Javascript dispone di una tipizzazione dinamica mentre Typescript di una statica
+Compatibilità: Javascript è lo standard supportato da tutti i browser mentre Typescript deve essere compilato tramite tsc
+Funzioni aggiuntive: Javascript dispone solo delle sue, Typescript ne aggiunge di nuove (interfacce, moduli, generics ecc)
+Debugging: Javascript errori visibili solo durante l'esecuzione, Typescript errori visibili durante la compilazione
+Curva di apprendimento: Javascript relativamente facile, Typescript richiede più tempo
+
+
+
+2-Il compilatore TS (perché è necessario? e come si usa?)
+
+2-Il compilatore è uno strumento software che serve a convertire il codice sorgente scritto in un linuaggio, in un altro linguaggio.
+In questo caso il compilatore Tsc ci serve perché i browser non leggono il linguaggio Typescript, perciò abbiamo la necessità
+che esso venga convertito in codice Javascript.
+
+
+3-La Type Inference
+
+3- La Type Inference è una caratteristica di TypeScript che permette al compilatore di dedurre automaticamente il tipo di 
+una variabile, funzione o espressione senza bisogno di specificarlo esplicitamente
+
+4-Il tipo ‘any’
+
+4-Il tipo ‘any’ rappresenta un tipo universale che può accettare qualsiasi valore, è il tipo più permissivo in Typescript 
+ed è utili nelle situazione in cui non si conosce il tipo esatto di una variabile in anticipo. Non viene sottoposto a controlli
+di tipo da parte del compilatore.
+
+5-Il tipo Union
+
+5-Il tipo Union in TypeScript permette di definire una variabile, parametro o un valore che può appartenere a diversi tipi.
+E' utile per rappresentare situazioni in cui un valore può essere di più di un tipo, migliorando la flessibilità del codice.
+Si usa l'operatore "|" per combinare più tipi.
+
+6-Le Interfaces in TS
+
+6- Le Interfaces in TS sono un costrutto TypeScrip in grado di specificare nel dettaglio la struttura di un oggetto,
+quante e quali proprietà debba avere, il tipo di ognuno di esse e quali debbano essere presenti o opzionali. 
+
+7-I generics
+
+7-I generics  permettono di definire funzioni, classi o interfacce che sono in grado di lavorare con diversi tipi di dati.
+Si possono inquadrare come argomenti di tipo, type arguments.
+
